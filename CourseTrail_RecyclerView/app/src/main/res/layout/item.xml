@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/dog"
+        android:contentDescription="Item image" />
+
+    <TextView
+        android:id="@+id/item_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_image"
+        android:padding="8dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        tools:text="Header" />
+
+    <TextView
+        android:id="@+id/item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_header"
+        android:layout_toRightOf="@id/item_image"
+        android:padding="8dp"
+        tools:text="Info" />
+</RelativeLayout>
